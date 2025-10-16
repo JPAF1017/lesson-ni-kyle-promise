@@ -10,7 +10,7 @@ const API = "https://jsonplaceholder.typicode.com/users";
 //=====================================================
 //Exportable function or something I dunnaur
 export default function App() {
-  const [data, setData] = useState<User[] | null>(null);
+  const [data, setData] = useState<User[]>();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [filteredUsers, setFilteredUsers] = useState<User[]>([]);

@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 //=====================================================
 //Props for the nav bar idol
 type NavBarProps = {
@@ -23,13 +24,13 @@ export default function NavBar({searchInput}: NavBarProps) {
 {/*=====================================================*/}
 {/* Area of navbar to hold the button */}
       <div>
-        <button className="bg-stone-600 px-6 py-2 rounded-lg font-semibold hover:scale-200 hover:animate-[pulse_0.1s_ease-in-out_infinite] hover:bg-stone-950 transition"
+        <button className="bg-stone-600 px-6 py-2 rounded-lg hover:scale-200 hover:animate-[pulse_0.1s_ease-in-out_infinite] hover:bg-stone-950 transition"
         onClick={() => AddUserArray(searchContent)}
         >
           Filter Natin Mga Young Stunnas
         </button>
       </div>
-      
+
 {/*=====================================================*/}
 {/* Area of navbar to hold the text area */}
       <div>

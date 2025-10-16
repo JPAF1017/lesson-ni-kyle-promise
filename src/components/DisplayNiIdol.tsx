@@ -1,9 +1,12 @@
 import type { User } from "../types"
 
+//=====================================================
+//Props for the display idol
 interface DisplayIdol {
   user: User
 }
-
+//=====================================================
+//Return data as a component idol
 export default function DisplayIdol({user}: DisplayIdol) {
   return (
     <div key={user.id} className="bg-gray-100 p-3 m-2 rounded shadow">
